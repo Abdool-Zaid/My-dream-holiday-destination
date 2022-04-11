@@ -8,18 +8,32 @@
   </head>
   <body>
     <style>
-        body{
-            background-image: url("../../i1.jpg");
-            background-size: 100% ;
-      </style>
-      <link rel="stylesheet" href="./styles.css">
-      </body>
-    <form action="" method="get">
-        <label for="email">email:</label>
-        <input type="text" id="email" name="email"><br><br>
-        <label for="phone number">phone number:</label>
-        <input type="text" id="phone number" name="phone number"><br><br>
-        <input type="submit" value="Submit">
-    <a href="./index.html">home page</a>
+      body{
+          background-image: url("../../i1.jpg");
+          background-size: 100% ;
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
 
+    <a href="./index.html">home page</a>
+    <form action="https://formspree.io/f/mzbojdyn" method="POST">
+      <label>
+        Name:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        contact number:
+        <input type="text" name="contact_number" />
+      </label>
+      <label for="date">
+        <input type="date" name="date" />
+      </label>
+      <label for="time"> <input type="time" name="time" /></label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
